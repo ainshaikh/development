@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 // let {email}=
-let email = "ainsaikhx7@gmail.com";
-let password = "craze@123AIN";
+let email = "";
+let password = "";
 // let { email, password } = require('./secrets');
 // let email = "";
 // let password = "";
