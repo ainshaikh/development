@@ -154,12 +154,8 @@
      bottom: 10rem;
     right: 6rem;
     z-index: 2;
- }
- .back-btn{
-    background-color: rgb(12, 11, 11);
-    height: 3rem;
-    width: 3rem;
-   border-radius: 70%;
 
  }
- 
+ .gallery:hover{
+     cursor: pointer;
+ }
