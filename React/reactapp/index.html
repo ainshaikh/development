@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Functional component</title>
+</head>
+<body>
+    <div id="root">Hello</div>
+
+    
+</body>
+<script type="text/babel">
+    // let ele =document.createElement("h1");
+    // ele.innerText="hello";
+    // let root=document.getElementById("root");
+    // console.log(ele);
+    // root.appendChild(ele);
+
+
+    //react
+
+    // let ele=React.createElement("h1",{
+    //     children:["Hello"]
+    // })
+    // console.log(ele);
+    // let root = document.getElementById("root");
+    // ReactDOM.render(ele,root);
+
+    // JSX-> JS+HTML
+
+    function Element({name="myName"
+    ,city="Delhi"}){
+        console.log(name);
+        return(//->jsx
+        <div>
+        <h1>Hello{name}</h1>
+        <h2>from{city}</h2>
+        </div>
+        )
+    }
+    // ReactDOM.render(<Element/>,document.getElementById('root'));
+
+
+    //Reuse
+
+    // function Main(){
+    //     return (
+
+    //     // we can only return one element inside. To return multiple element we wrap the element inside <div> or <React.fragment>
+
+    //         // <div>
+    //         // <Element/>
+    //         // <Element/>
+    //         // <Element/>
+    //         // <Element/>
+    //         // <Element/>
+    //         // <Element/>
+    //         // </div>
+            
+    //         // or
+
+    //         <React.Fragment>
+    //         <Element/>
+    //         <Element/>
+    //         <Element/>
+    //         <Element/>
+    //         <Element/>
+    //         <Element/>
+    //         </React.Fragment>
+    //     )
+    // }
+    // ReactDOM.render(<Main/>,document.getElementById('root'));
+
+
+    
+    // return(//->jsx
+    //     <h1>Hello</h1>
+    //     )
+    // }
+    // // ReactDOM.render(<Element/>,document.getElementById('root'));
+
+
+    //Functional components --> arguments--> we call props in react
+
+    function Main(){
+        return (
+
+        // we can only return one element inside. To return multiple element we wrap the element inside <div> or <React.fragment>
+
+            // <div>
+            // <Element/>
+            // <Element/>
+            // <Element/>
+            // <Element/>
+            // <Element/>
+            // <Element/>
+            // </div>
+            
+            // or
+
+            <React.Fragment>
+            <Element name="Mohd Ain" city="Allahabad"/>
+            <Element/>
+            <Element/>
+            <Element/>
+            <Element/>
+            <Element/>
+            </React.Fragment>
+        )
+    }
+    ReactDOM.render(<Main/>,document.getElementById('root'));
+
+
+
+</script>
+
+
+
+
+</html>
