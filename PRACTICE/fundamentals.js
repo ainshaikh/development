@@ -101,3 +101,94 @@ undefined
 let ask = prompt("What is your name?");
 alert(ask);
 undefined
+
+
+
+
+
+// conversion type
+
+// Summary
+// The three most widely used type conversions are to string, to number, and to boolean.
+
+// String Conversion – Occurs when we output something. Can be performed with String(value). The conversion to string is usually obvious for primitive values.
+
+// Numeric Conversion – Occurs in math operations. Can be performed with Number(value).
+
+// The conversion follows the rules:
+
+// Value	Becomes…
+// undefined	NaN
+// null	0
+// true / false	1 / 0
+// string	The string is read “as is”, whitespaces (includes spaces, tabs \t, newlines \n etc.) from both sides are ignored. An empty string becomes 0. An error gives NaN.
+// Boolean Conversion – Occurs in logical operations. Can be performed with Boolean(value).
+
+// Follows the rules:
+
+// Value	Becomes…
+// 0, null, undefined, NaN, ""	false
+// any other value	true
+
+let value = true;
+alert(typeof value);
+undefined
+value = string(value);
+alert(typeof value);
+VM275:1 Uncaught ReferenceError: string is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM275:1
+value = String(value);
+'true'
+alert(typeof value);
+undefined
+// numeric conversion
+undefined
+let str = "6" / "2";
+undefined
+alert("6" / "2");
+undefined
+let str = "123";
+alert(typeof str);
+undefined
+let num = Number(str);
+alert(typeof num);
+undefined
+let age = Number("My name is AIN");
+alert(typeof age);
+undefined
+let age = Number("My name is AIN");
+alert(age);
+undefined
+alert(Number ("123"));
+undefined
+alert(Number("123a"));
+undefined
+alert(Number(1));
+undefined
+alert(Number("true"));
+undefined
+alert(Number(true));
+undefined
+alert(Number(false));
+undefined
+// boolean
+undefined
+alert(Boolean(1));
+undefined
+alert(Boolean(0));
+undefined
+alert(Boolean(""));
+undefined
+alert(Boolean(ain));
+VM1845:1 Uncaught ReferenceError: ain is not defined
+    at <anonymous>:1:15
+(anonymous) @ VM1845:1
+alert(Boolean("ain"));
+undefined
+alert(Boolean(" "));
+undefined
+alert(Boolean(0));
+undefined
+alert(Boolean("0"));
+undefined
