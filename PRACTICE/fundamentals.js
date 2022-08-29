@@ -192,3 +192,87 @@ alert(Boolean(0));
 undefined
 alert(Boolean("0"));
 undefined
+
+
+
+// BASIC OPERATOR MATHS
+
+// UNARY
+// the unary negation - reverses the sign of a number
+let x = 1;
+x = -x;
+// alert(x); unary negation applies
+
+
+let x = 1;
+x = -x;
+alert(x);
+undefined
+let x = 3, y = 5;
+alert(x-y);
+undefined
+alert(y-x);
+undefined
+alert(5 % 2);
+undefined
+alert(10 %2);
+undefined
+// exponentiation
+undefined
+alert(2**3);
+undefined
+// This raise to the power
+undefined
+alert(10**5);
+undefined
+alert(3**(1/2));
+undefined
+alert(4**(1/2));
+undefined
+// concatenation
+undefined
+let ain = "my whole name is" + "MOHD AIN";
+alert(ain);
+undefined
+let ain = "my whole name is" + "MOHD AIN";
+alert(ain);
+undefined
+alert("1"+2);
+undefined
+alert(2+"1")
+undefined
+alert(2+2+"1");
+undefined
+alert("1"+2+2);
+undefined
+// The binary + is the only operator that supports strings in such a way. Other arithmetic operators work only with numbers and always convert their operands to numbers.
+undefined
+alert(6-"2");
+undefined
+alert("6" /"3"):
+VM1108:1 Uncaught SyntaxError: Unexpected token ':'
+alert("6" / "3");
+undefined
+let x = 1;
+
+alert(-x);
+undefined
+let a = ain;
+undefined
+alert(-ain);
+undefined
+let apple = "3";
+let oranges = "5";
+alert(apple+oranges);
+undefined
+alert(+apple++oranges);
+VM1564:1 Uncaught SyntaxError: missing ) after argument list
+alert(+apple + +oranges);
+undefined
+// chaining assignment 
+undefined
+let a=b=c=2+4;
+alert(a);
+alert(b);
+alert(c);
+undefined
